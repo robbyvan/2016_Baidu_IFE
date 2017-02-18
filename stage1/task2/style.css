@@ -1,0 +1,68 @@
+/*default settings*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,nav, section{
+  margin:0;
+  padding:0;
+  border:0;
+  display: block;
+} 
+body{
+  background:#fff;
+  color:#333;
+  font-size:12px; 
+  margin-top:5px;
+  font-family:"SimSun","宋体","Arial Narrow";
+} 
+ul,ol{
+  list-style-type:none;
+} 
+select,input,img,select{
+  vertical-align:middle;
+} 
+a{
+  text-decoration:none;
+} 
+a:link{
+  color:#009;
+} 
+a:visited{
+  color:#800080;
+} 
+a:hover,a:active,a:focus{
+  color:#c00;
+  text-decoration:underline;
+} 
+
+/*nav bar*/
+nav {
+  background-color: #3e3e3e;
+  display: block;
+  height: 60px;
+}
+nav img {
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+nav h1{
+  margin-left: 10px;
+  display: inline-block;
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+  font-size: 2em;
+}
+nav ul{
+  display: inline-block;
+  line-height: 60px;
+  position: absolute;
+  right: 10px;
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 30px;
+}
+nav ul li a:link{
+  color: #fff;
+}
