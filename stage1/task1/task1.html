@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Task 1</title>
 </head>
 <body>
@@ -113,27 +114,27 @@
     <h2>这里以后是一个侧栏, 这是侧栏的标题</h2>
     <h2>侧栏注册窗口标题</h2>
     <form action="#">
-      <span>请输入邮箱地址: </span>
+      <label>请输入邮箱地址: </label>
       <input type="email" name="email" value="这是一个文本输入框" />
       <p>邮箱地址请按要求格式输入</p>
-      <span>请输入密码: </span>
+      <label>请输入密码: </label>
       <input type="text" name="password" value="这是一个文本输入框" />
-      <span>请重复输入密码: </span>
+      <label>请重复输入密码: </label>
       <input type="text" name="password" value="这是一个文本输入框" />
       <p>密码请为6-16位英文数字</p>
       
-      <span>性别: </span> 
+      <label>性别: </label> 
       <input type="radio" name="sex" value="male" checked="checked" />男 
       <input type="radio" name="sex" value="female" />女 
-      <span>城市: </span> 
+      <label>城市: </label> 
       <select name="city">
         <option value="bj">北京</option>
         <option value="sh">上海</option>
         <option value="cd">成都</option>
-        <input type="checkbox" name="sports" /><span>运动</span>
-        <input type="checkbox" name="sports" /><span>艺术</span>
-        <input type="checkbox" name="sports" /><span>科学</span>
-        <span>个人描述: </span>
+        <input type="checkbox" name="sports" /><label>运动</label>
+        <input type="checkbox" name="sports" /><label>艺术</label>
+        <input type="checkbox" name="sports" /><label>科学</label>
+        <label>个人描述: </label>
         <textarea value="这是一个多行输入框, 输入您的个人描述"></textarea>
         <button type="submit">确认提交</button>
       </select>
