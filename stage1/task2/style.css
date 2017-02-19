@@ -13,9 +13,6 @@ body{
   margin-top:5px;
   font-family:"SimSun","宋体","Arial Narrow";
 } 
-ul,ol{
-  /*list-style-type:none;*/
-} 
 select,input,img,select{
   vertical-align:middle;
 } 
