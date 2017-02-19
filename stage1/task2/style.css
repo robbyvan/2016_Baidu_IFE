@@ -1,5 +1,5 @@
 /*default settings*/
-body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,nav, section{
+body,ul, ol, p,h1,h2,h3,h4,h5,h6,form,fieldset,img,div,nav,section,table,td,th{
   margin:0;
   padding:0;
   border:0;
@@ -7,13 +7,14 @@ body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,nav, section{
 } 
 body{
   background:#fff;
-  color:#333;
+  color: #333;
+  background-color:#e2e2e2;
   font-size:12px; 
   margin-top:5px;
   font-family:"SimSun","宋体","Arial Narrow";
 } 
 ul,ol{
-  list-style-type:none;
+  /*list-style-type:none;*/
 } 
 select,input,img,select{
   vertical-align:middle;
@@ -25,7 +26,7 @@ a:link{
   color:#009;
 } 
 a:visited{
-  color:#800080;
+  color:#8D00D4;
 } 
 a:hover,a:active,a:focus{
   color:#c00;
@@ -37,6 +38,7 @@ nav {
   background-color: #3e3e3e;
   display: block;
   height: 60px;
+  margin-bottom: 40px;
 }
 nav img {
   height: 45px;
@@ -63,6 +65,221 @@ nav ul li{
   display: inline-block;
   margin-right: 30px;
 }
-nav ul li a:link{
+nav a, nav a:visited, nav a:active, nav a:link{
   color: #fff;
+  text-decoration: none;
+}
+
+/*sections*/
+section, aside {
+  margin: 0 20px 20px 20px;
+  padding: 40px 20px 40px 20px;
+  box-shadow: 2px 2px 2px 2px #878787;
+  background-color: #fff;
+}
+section h2{
+  height: 40px;
+  line-height: 40px;
+}
+section h3{
+  height: 40px;
+  font-size: 1.3em;
+  line-height: 40px;
+  color: #8A8A8A;
+}
+section p span{
+  height: 20px;
+  line-height: 20px;
+  color: #8A8A8A;
+}
+section p{
+  margin-top: 10px;
+  font-size: 1.1em;
+  line-height: 20px;
+}
+section img{
+  width: 300px;
+  height: 300px;
+  margin: 20px 0 0 0;
+}
+section ul {
+  margin: 30px 0 0 30px;
+  list-style-type: none;
+}
+section ul li{
+  display: block;
+  list-style-type: none;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.2em;
+}
+/*gallery*/
+#gallery img{
+  margin: 0;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+}
+#gallery div {
+  display: table;
+  box-sizing: content-box;
+  border: 1px solid #000;
+  margin-top: 20px;
+}
+#gallery div p{
+  text-align: center;
+  line-height: 1em;
+  margin-top: 10px;
+}
+
+/*list*/
+section ol{
+  margin-left: 30px;
+}
+section ol li{
+  display: list-item;
+  list-style-type: decimal;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.2em;
+}
+/*table*/
+section table{
+  display: block;
+  width: 100%;
+}
+table tbody, table tr{
+  display: block;
+  width: 100%;
+}
+section td,section th{
+  display: inline-block;
+  /*border: 1px solid pink;*/
+  box-sizing: border-box;
+  text-align: left;
+  padding-left: 2px;
+  height: 25px;
+  border-left: 1px solid #B8B8B8;
+  border-top: 1px solid #B8B8B8;
+  font-size: 1.1em;
+  line-height: 25px;
+}
+section th {
+  background-color: #333;
+  color: #fff;
+}
+section td {
+  background-color: #fff;
+  color: #333;
+
+}
+.col-2 {
+  display: inline-block;
+  width: 16.6%;
+}
+.col-5 {
+  display: inline-block;
+  width: 41.5%;
+}
+.col-10 {
+  display: inline-block;
+  width: 83%;
+}
+table tr:last-child td{
+  background-color: #B8B8B8;
+  color: #333;
+}
+td a, td a:link, td a:visited {
+  color: #8D00D4;
+}
+
+/*form*/
+#forms h2{
+  border-left: 3px solid #b8b8b8;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 5px;
+}
+form {
+  margin-top: 20px;
+}
+form div{
+  margin-top: 10px;
+}
+form label{
+  display: inline-block;
+}
+form label, form input{
+  display: inline-block;
+}
+form div div label{
+  width: 100px;
+  text-align: right;
+  margin-left: 30%;
+}
+form div div input{
+  width: 150px;
+  margin-left: 15px;
+  height: 18px;
+  line-height: 18px;
+}
+form div div p {
+  margin-top: 10px;
+  margin-left: 30%;
+  padding-left: 118px;
+  color: #b8b8b8;
+}
+form div label{
+  width: 100px;
+  text-align: right;
+  margin-left: 30%;
+  height: 18px;
+}
+form div input{
+  width: 15px;
+  margin-left: 15px;
+  height: 18px;
+  line-height: 18px;
+}
+form div select{
+  margin-left: 15px;
+}
+
+form div:nth-child(5) label{
+  height: 206px;/*clear float*/
+  float: left;
+}
+form div textarea{
+  width: 400px;
+  height: 200px;
+  margin-left: 15px;
+  line-height: 18px;
+  font-size: 12pt;
+}
+form button {
+  display: block;
+  border: none;
+  margin-top: 20px;
+  width: 100%;
+  height: 35px;
+  border-radius: 4px;
+  background-color: #598CFF;
+  color: #fff;
+  font-size: 1.2em;
+}
+form button:hover{
+  cursor: pointer;
+}
+
+/*footer*/
+footer {
+  background-color: #333;
+  color: #fff;
+  font-size: 14pt;
+  height: 60px;
+}
+footer p{
+  margin: 0 auto;
+  text-align: center;
+  line-height: 60px;
 }
