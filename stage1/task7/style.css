@@ -616,6 +616,10 @@ ul.descriptions li:last-child{
   font-size: 1.2em;
 }
 
-
+/*footer*/
+footer{
+  background-color: #30303A;
+  color: #fff;
+}
 
 
