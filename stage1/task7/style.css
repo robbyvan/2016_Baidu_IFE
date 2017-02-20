@@ -281,7 +281,7 @@ ul.descriptions li:last-child{
 #section-5 {
   height: 505px;
   min-width: 1280px;
-  background-color: #fff/*#ECEBED*/;
+  background-color: #ECEBED/*#ECEBED*/;
   position: relative;
 }
 
@@ -314,10 +314,206 @@ ul.descriptions li:last-child{
 #section-5 p{
   color: #8E8E8F;
 }
-#section-5 p:nth-child(2n+1){
-  /*background-color: pink;*/
-}
+
 
 /*section 6*/
+#section-6{
+  min-width: 1280px;
+  position: relative;
+}
+#section-6 .first-row{
+  height: 565px;
+}
+.first-row div{
+  float: left;
+  width: 66%;
+  min-width: 852px;
+  height: 565px;
+  background-image: url("./s61.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#section-6 .left::after {
+    content: '';
+    position: absolute;
+    border-width: 30px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+    top: 250px;
+    left: 66%;
+    margin-left: -60px;
+}
+.first-row aside{
+  position: relative;
+  margin-left: 66%;
+  width: 34%;
+  height: 565px;
+  background-color: #fff;
+  font-family: "Heiti SC Light", "Microsoft YaHei", sans-serif;
+  font-weight: lighter;
+}
+.first-row aside h2{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 150px;
+  text-align: center;
+  margin-left: -75px; 
+  font-size: 2em;
+}
+.first-row aside h2 span{
+  color: #E15C54;
+}
+.first-row aside p{
+  margin: 0;
+  padding: 0;
+  /*background-color: gold;*/
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 300px;
+  text-align: left;
+  margin-left: -150px;
+  line-height: 30px;
+  color: #8E8E8F;
+}
+.first-row .more{
+  text-decoration: none;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -75px;
+  text-align: center;
+  background-color: #fff;
+  color: #E15C54;
+  border: 1px solid #E15C54;
+}
+.first-row .more:hover{
+  background-color: #E15C54;
+  color: #fff;
+}
+.first-row ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -30px;
+}
+.first-row ul li{
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #8E8E8F;
+  border-radius: 100%;
+}
+.first-row li:hover {
+  cursor: pointer;
+  background-color: #8E8E8F;
+}
+
+/*section6 2nd row*/
+#section-6 .second-row{
+  height: 530px;
+  min-width: 66%;
+  position: relative;
+}
+.second-row div{
+  height: 530px;
+  width: 33%;
+  float: left;
+  position: relative;
+}
+.red-more {
+  background-color: #E15C54;
+  color: #fff;
+}
+.white-more {
+  background-color: #fff;
+  color: #8E8E8F;
+}
+.second-row aside {
+  background-image: url("./s62.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: 66%;
+  width: 34%;
+  height: 530px;
+}
+.second-row h2, .second-row button{
+  font-family: "Heiti SC Light", "Microsoft YaHei", sans-serif;
+  font-weight: lighter;
+}
+.second-row h2{
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  top: 40%;
+  text-align: center;
+}
+.second-row h2+h2{
+  top: 50%;
+}
+.second-row button{
+  border: none;
+  border-radius: 0;
+  position: relative;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  top: 70%;
+  height: 40px;
+  font-size: 1.6em;
+  text-align: center;
+}
+.red-more button{
+  color: #fff;
+  background-color: #E15C54;
+  border: 1px solid #fff;
+}
+.red-more button:hover{
+  color: #E15C54;
+  background-color: #fff;
+  border: 1px solid #E15C54;
+  cursor: pointer;
+}
+
+.white-more button{
+  color: #E15C54;
+  background-color: #fff;
+  border: 1px solid #E15C54;
+}
+.white-more button:hover{
+  color: #fff;
+  background-color: #E15C54;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+#section-6 aside::after {
+    content: '';
+    position: absolute;
+    border-width: 30px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    top: 250px;
+    right: 34%;
+    margin-right: -60px;
+}
+
 
 
