@@ -22,9 +22,16 @@ body{
   font-family: "SimSun","宋体","Arial Narrow";
   margin: 0;
   padding: 0;
+  cursor: auto;
 } 
-select,input,img,select{
+::selection {
+  background-color: #E15C54;
+  color: #FFF;
+  text-shadow: none;
+}
+select,input,img,select, textarea{
   vertical-align:middle;
+  cursor: pointer;
 }
 
 #main-container {
@@ -40,13 +47,13 @@ nav {
 }
 nav img {
   position: absolute;
-  margin: 0 0 0 40px;
+  margin: 5px 0 0 40px;
   width: 40px;
   height: 40px;
   display: inline-block;
 }
 nav h3 {
-  margin: 0 0 0 100px;
+  margin: 8px 0 0 100px;
   position: absolute;
   height: 40px;
   width: 100px;
@@ -59,6 +66,7 @@ nav ul {
   display: inline;
   width: 700px;
   right: 0;
+  top: 4px;
 }
 nav ul li {
   display: inline-block;
@@ -598,6 +606,7 @@ ul.descriptions li:last-child{
   font-weight: lighter;
 }
 #section-7 textarea{
+  resize: none;
   border: none;
   padding: 10px;
   margin-left: 20px;
@@ -611,15 +620,117 @@ ul.descriptions li:last-child{
   border: none;
   margin: 10px 0 0 20px;
   background-color: #ECEBED;
+  color: #E15C54;
   height: 40px;
   width: 645px;
   font-size: 1.2em;
 }
+#section-7 button:hover{
+  background-color: #E15C54;
+  color: #fff;
+  cursor: pointer;
+}
 
 /*footer*/
 footer{
-  background-color: #30303A;
+  background-color: #30313E;/**/
   color: #fff;
+  position: relative;
+  height: 620px;
 }
+
+footer div{
+  position: absolute;
+  height: 90px;
+  width: 490px;
+  text-align: center;
+  left: 50%;
+  margin-left: -245px;
+  top: 20%;
+}
+footer div h2{
+  margin-bottom: 10px;
+}
+footer div p{
+  font-size: 0.9em;
+  line-height: 20px;
+}
+
+footer form {
+  position: absolute;
+  width: 600px;
+  height: 80px;
+  left: 50%;
+  margin-left: -300px;
+  top: 45%;
+}
+footer form input{
+  width: 480px;
+  height: 30px;
+  padding: 10px;
+  line-height: 40px;
+  font-size: 1.2em;
+}
+footer button {
+  position: relative;
+  top: 4px;
+  color: #fff;
+  background-color: #8b8b8b;
+  border: none;
+  height: 54px;
+  width: 80px;
+  line-height: 54px;
+  font-size: 1.2em;
+}
+footer ul{
+  margin: 30px 0 0 0;
+  font-size: 3em;
+  padding: 0;
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  left: 50%;
+  margin-left: -200px;
+  top: 60%;
+}
+footer ul li {
+  display: inline-block;
+  text-align: center;
+  width: 92px;
+}
+footer ul li:hover {
+  cursor: pointer;
+  color: #8b8b8b;
+}
+footer aside {
+  height: 60px;
+  width: 100%;
+  color: #fff;
+  background-color: #24242E;
+  position: absolute;
+  bottom: 0;
+}
+footer aside p{
+  margin-top: 10px;
+  height: 30px;
+  font-size: 1.4em;
+  display: block;
+  text-align: center;
+}
+footer aside div{
+  margin-top: 30px;
+  height: 30px;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+}
+footer aside div a{
+  color: #fff;
+  text-decoration: none;
+}
+footer aside div a:hover {
+  text-decoration: underline;
+}
+
 
 
