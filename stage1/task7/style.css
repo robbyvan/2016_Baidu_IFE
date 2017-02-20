@@ -66,10 +66,10 @@ nav li a{
   text-decoration: none;
 }
 nav li a:hover {
-  color: #E53C3C;
+  color: #E15C54;
 }
 .login a{
-  color: #E53C3C;
+  color: #E15C54;
 }
 .login a:hover{
   color: #D9CDA1;
@@ -113,6 +113,7 @@ nav li a:hover {
   color: #fff;
   background-color: #E15C54;
   margin-top: 60px;
+  font-family: "Heiti SC Light", "Microsoft YaHei", sans-serif;
 }
 #section-1 a:hover {
   cursor: pointer;
@@ -186,5 +187,137 @@ ul.descriptions li:last-child{
   color: #666463;
   opacity: 0.6;
 }
+
+/*section 4*/
+#section-4 {
+  position: relative;
+  height: 300px;
+  background-image: url("./s42.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#section-4 h2, p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+#section-4 h2 {
+  position: absolute;
+  width: 400px;
+  left: 50%;
+  margin-left: -200px;
+  top: 50px;
+  font-size: 2.2em;
+  text-align: center;
+}
+#section-4 p{
+  position: absolute;
+  width: 400px;
+  left: 50%;
+  margin-left: -200px;
+  top: 100px;
+  text-align: center;
+}
+  
+#section-4 form {
+  position: absolute;
+  height: 80px;
+  width: 1200px;
+  top: 60%;
+  left: 50%;
+  margin-left: -600px;
+}
+
+#section-4 select {
+  height: 40px;
+  width: 250px;
+  font-size: 1.2em;
+  color: #8E8E8F;
+
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: none;
+  border-radius: 0;
+
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+  background-color: #fff;
+
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 14px;
+}
+#section-4 select {
+  margin-right: 40px;
+  padding-left: 10px;
+}
+
+#section-4 a{
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  text-decoration: none;
+  height: 40px;
+  line-height: 40px;
+  width: 200px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #E15C54;
+  text-align: center;
+  letter-spacing: 30px;
+  padding-left: 30px;
+}
+#section-4 a:hover {
+  background-color: #fff;
+  color: #E15C54;
+}
+
+/*#section 5*/
+#section-5 {
+  height: 505px;
+  min-width: 1280px;
+  background-color: #fff/*#ECEBED*/;
+  position: relative;
+}
+
+#section-5 img{
+  display: block;
+  margin: 0 auto;
+  width: 220px;
+  height: 340px;
+  text-align: center;
+}
+#section-5 div {
+  float: left;
+  position: relative;
+  margin: 2%;
+  width: 20%;
+  height: 383px;
+}
+#section-5 h3, #section-5 p {
+  color: #534141;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-weight: lighter;
+  font-family: "Heiti SC Light", "Microsoft YaHei", sans-serif;
+}
+#section-5 h3{
+  font-size: 2em;
+  font-weight: normal;
+}
+#section-5 p{
+  color: #8E8E8F;
+}
+#section-5 p:nth-child(2n+1){
+  /*background-color: pink;*/
+}
+
+/*section 6*/
 
 
