@@ -31,7 +31,6 @@ body{
 }
 select,input,img,select, textarea{
   vertical-align:middle;
-  cursor: pointer;
 }
 
 #main-container {
