@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <label>Please type sth here<input id="aqi-input" type="text"></label>
+  <button id="button">Submit</button>
+
+  <div>Your input: <span id="aqi-display">N/A</span></div>
+
+<script type="text/javascript">
+
+(function() {
+  /*  
+  在注释下方写下代码
+  给按钮button绑定一个点击事件
+  在事件处理函数中
+  获取aqi-input输入的值，并显示在aqi-display中
+  */
+  var elem = document.getElementById('button');
+  var btnHandler = function(e){
+    var fromElem = document.getElementById('aqi-input');
+    var toElem = document.getElementById('aqi-display');
+    // var txt = document.createTextNode(fromElem.value);
+    // toElem.appendChild(txt);
+    toElem.innerHTML = fromElem.value;
+  };
+  elem.addEventListener('click', btnHandler, false);
+
+})();
+
+</script>
+</body>
+</html>
