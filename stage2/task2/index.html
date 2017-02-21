@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+    <li>第二名：福州（样例），10</li> -->
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100]
+];
+
+(function () {
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+  */
+
+  aqiData.sort(function(a, b){
+    return b[1] - a[1];
+  });
+
+  var targetUl = document.getElementById('aqi-list');
+
+  for (var i = 0; i < aqiData.length; ++i){
+    var liElem = document.createElement('li');
+    var text = '第' + (i+1) + '名: ' + aqiData[i][0] + '(样例) , ' + aqiData[i][1];
+    var tNode = document.createTextNode(text);
+    liElem.appendChild(tNode);
+    targetUl.appendChild(liElem);
+  }
+
+
+  // function heapify(aqiData){
+  //   var aqiHeap = aqiData.slice();
+  //   var start = Math.floor(aqiHeap.length / 2);
+  //   for (var i = start; i > -1 ; --i){
+  //     var current = aqiHeap[i];
+  //     var leftChild, rightChild;
+  //     if ( (leftChild = aqiHeap[2*i] ) !== undefined) {
+  //       if (leftChild[1] > current[1]){
+  //         var temp = leftChild[0];
+  //         leftChild[0] = current[0];
+  //         current[0] = temp;
+  //         temp = leftChild[1];
+  //         leftChild[1] = current[1];
+  //         current[1] = temp;
+  //       }
+  //     }
+  //     if ( ( rightChild = aqiHeap[2*i+1] ) !== undefined) {
+  //       if (rightChild[1] > current[1]){
+  //         var temp = rightChild[0];
+  //         rightChild[0] = current[0];
+  //         current[0] = temp;
+  //         temp = rightChild[1];
+  //         rightChild[1] = current[1];
+  //         current[1] = temp;
+  //       }
+  //     }
+  //   }
+  //   return aqiHeap;
+  // }
+
+  // function deleteMax(aqiHeap, n){
+  //   if (n === 0){
+  //     return aqiHeap;
+  //   }
+  //   var currentMax = aqiHeap[0];
+  //   var temp = aqiHeap[n-1];
+  //   aqiHeap[n-1] = currentMax;
+  //   currentMax = temp;
+  //   return adjustHeap(aqiHeap, n-1);
+  // }
+
+  // function adjustHeap(aqiHeap, n){
+  //   for (var i = 0; i < n; ){
+  //     var leftChild = aqiHeap[2*i];
+  //     var rightChild = aqiHeap[2*i+1];
+  //     if (leftChild[1] > rightChild[1]){
+  //       if (aqiHeap[i][1] >= leftChild){
+  //         var temp = leftChild;
+  //         leftChild = aqiHeap[i];
+  //         aqiHeap[i] = temp;
+  //       }else{
+  //         return aqiHeap;
+  //       }
+  //     }else{
+  //       if (aqiHeap[i][1] >= rightChild){
+  //         var temp = rightChild;
+  //        rightChild = aqiHeap[i];
+  //         aqiHeap[i] = temp;
+  //       }else{
+  //         return aqiHeap;
+  //       }      
+  //     }
+  //   }
+  //   return aqiHeap;
+  // }
+
+
+  // var heap = heapify(aqiData);
+  // console.log(heap);
+  // var currentMax = deleteMax(heap, heap.length);
+  // console.log(currentMax);
+
+
+
+})();
+
+</script>
+</body>
+</html>
