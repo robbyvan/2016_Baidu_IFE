@@ -74,7 +74,7 @@ function renderChart() {
       case("month"): {
         text = "Monthly";
         barWidth = 200;
-        offset = 120;
+        offset = 100;
         break;
       }
     };
