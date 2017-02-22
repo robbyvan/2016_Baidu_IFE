@@ -1,0 +1,34 @@
+body {
+  background-color: #fff;
+}
+div.aqi-chart-wrap{
+  display: block;
+  position: relative;
+  /*top: 60px;*/
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px 2px #000;
+  width: 1000px;
+  height: 600px;
+  /*background-color: pink;*/
+}
+h1 {
+  display: block;
+  color: #ff8b80;
+  font-family: 'Helvetica', sans-serif;
+  width: 600px;
+  text-align: center;
+  margin: 40px auto;
+}
+div.bar {
+  display: inline-block;
+  margin: 0 auto;
+  /*vertical-align: baseline;*/
+  /*width: 10px;*/
+  position: absolute;
+  bottom: 50px;
+}
+div.bar:hover{
+  cursor: pointer;
+}
