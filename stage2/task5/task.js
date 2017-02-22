@@ -57,7 +57,7 @@ function renderChart() {
   var graphTitle = document.querySelector('h1.graph-title');
   var text = "Please Select a City";
   var barWidth, barInterval;
-  if (pageState.currSelectCity !== '-select a city-'){
+  if (pageState.currSelectCity != '-Select a city-'){
     switch(pageState.currGraTime){
       case("day"): {
         text = "Daily";
@@ -102,7 +102,7 @@ function graTimeChange() {
   if (pageState.currGraTime !== currntTime){
     pageState.currGraTime = currntTime;
   }
-  console.log(pageState);
+  // console.log(pageState);
   // 调用图表渲染函数
   initAqiChartData();
   renderChart();
@@ -116,7 +116,7 @@ function citySelectChange() {
   if (pageState.currSelectCity !== currentCity){
     pageState.currSelectCity = currentCity;
   }
-  console.log(pageState);
+  // console.log(pageState);
   // 调用图表渲染函数
   initAqiChartData();
   renderChart();
@@ -138,7 +138,7 @@ function initCitySelector() {
 
   for (var aqiCity in aqiSourceData){
     cityOptions += '<option data-city="' + aqiCity + '">' + aqiCity + '</option>';
-    console.log(aqiCity);
+    // console.log(aqiCity);
   }
 
   citySelector.innerHTML = cityOptions;
