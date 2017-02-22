@@ -29,6 +29,7 @@ function checkInput(callback){
     alert('Sorry, only numbers are allowed.');
   }
 }
+
 function liHandler(e){
   checkInput(myQueue.joinFromLeft);
   renderGraph();

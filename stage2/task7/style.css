@@ -1,0 +1,14 @@
+#queueArea {
+  display: block;
+  position: relative;
+  width: 900px;
+  height: 400px;
+  background-color: rgba(111, 111, 111, 0.5);
+}
+.boxes{
+  display: inline-block;
+  position: absolute;
+  bottom: 30px;
+  width: 11px;
+  background-color: #ff8b80;
+}
