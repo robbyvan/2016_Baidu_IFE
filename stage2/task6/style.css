@@ -1,0 +1,11 @@
+.boxes{
+  display: inline-block;
+  margin-top: 4px;
+  color: #fff;
+  background-color: #ff8b80;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  margin-right: 20px;
+}
