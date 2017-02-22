@@ -24,6 +24,7 @@ $ = function(el){
 
 function checkInput(callback){
   var userInput = $('#user-input').value;
+  $('#user-input').value = "";
   var myExp = new RegExp(/^[0-9]*$/, 'i');
   if (userInput.length > 1 && userInput.length < 3 && myExp.test(userInput)){
     callback.apply(myQueue, [userInput]);

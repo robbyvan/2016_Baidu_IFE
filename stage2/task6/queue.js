@@ -21,6 +21,7 @@ var myQueue = new DoubleQueue();
 
 function checkInput(callback){
   var userInput = document.getElementById('user-input').value;
+  document.getElementById('user-input').value = "";
   var myExp = new RegExp(/^[0-9]*$/, 'i');
   if (myExp.test(userInput)){
     console.log(this);
