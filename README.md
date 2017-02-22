@@ -7,4 +7,5 @@
  - [2-column Layout](https://robbyvan.github.io/2-Column-Layout/task1_2.html)
 
 ##Basic JS
- - [Histogram of City Air Quality](https://robbyvan.github.io/2016_Baidu_IFE/stage2/task5/)
+ - [Histogram Generator for City Air Quality](https://robbyvan.github.io/2016_Baidu_IFE/stage2/task5/)
+ - [\<tr\> insertion & deletion](https://robbyvan.github.io/2016_Baidu_IFE/stage2/task4/)
