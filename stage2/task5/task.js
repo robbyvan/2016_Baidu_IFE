@@ -32,15 +32,15 @@ function randomBuildData(seed) {
 }
 
 var aqiSourceData = {
-  "北京-Beijing": randomBuildData(600),
+  "北京-Beijing": randomBuildData(500),
   "上海-Shanghai": randomBuildData(300),
-  "香港-Hongkong": randomBuildData(80),
+  "香港-Hongkong": randomBuildData(100),
   "成都-Chengdu": randomBuildData(200),
   "广州-Guangzhou": randomBuildData(200),
-  "深圳-Shenzhen": randomBuildData(100),
-  "西安-Xi'an": randomBuildData(500),
-  "福州-Fuzhou": randomBuildData(100),
-  "厦门-Xiamen": randomBuildData(100)
+  "深圳-Shenzhen": randomBuildData(120),
+  "西安-Xi\'an": randomBuildData(500),
+  "福州-Fuzhou": randomBuildData(140),
+  "厦门-Xiamen": randomBuildData(130)
 };
 
 // 用于渲染图表的数据
@@ -138,6 +138,7 @@ function initCitySelector() {
 
   for (var aqiCity in aqiSourceData){
     cityOptions += '<option data-city="' + aqiCity + '">' + aqiCity + '</option>';
+    console.log(aqiCity);
   }
 
   citySelector.innerHTML = cityOptions;
@@ -222,7 +223,7 @@ function initAqiChartData() {
     }
 
   } 
-  console.log(chartData);
+  // console.log(chartData);
 }
 
 /**初始化函数**/
