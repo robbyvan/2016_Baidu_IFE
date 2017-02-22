@@ -32,15 +32,15 @@ function randomBuildData(seed) {
 }
 
 var aqiSourceData = {
-  "北京": randomBuildData(500),
-  "上海": randomBuildData(300),
-  "广州": randomBuildData(200),
-  "深圳": randomBuildData(100),
-  "成都": randomBuildData(300),
-  "西安": randomBuildData(500),
-  "福州": randomBuildData(100),
-  "厦门": randomBuildData(100),
-  "沈阳": randomBuildData(500)
+  "北京-Beijing": randomBuildData(600),
+  "上海-Shanghai": randomBuildData(300),
+  "香港-Hongkong": randomBuildData(80),
+  "成都-Chengdu": randomBuildData(200),
+  "广州-Guangzhou": randomBuildData(200),
+  "深圳-Shenzhen": randomBuildData(100),
+  "西安-Xi'an": randomBuildData(500),
+  "福州-Fuzhou": randomBuildData(100),
+  "厦门-Xiamen": randomBuildData(100)
 };
 
 // 用于渲染图表的数据
