@@ -78,7 +78,7 @@ function renderChart() {
         break;
       }
     };
-    text += "Air Quality in " + pageState.currSelectCity;
+    text += " Air Quality in " + pageState.currSelectCity;
   }
   graphTitle.innerHTML = text;
 
