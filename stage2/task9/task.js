@@ -12,9 +12,9 @@ function langHandler(e){
   console.log(e.keyCode);
   if (e.keyCode === 13 || e.keyCode === 32 || e.keyCode === 188){
     let text = this.value;
-    if (e.keyCode === 13){
+    // if (e.keyCode === 13){
       this.value = "";
-    }
+    // }
     let langs = text.split(/[\s+,*，*]/).filter(val => val !== "");
     for (let i = 0; i < langs.length; ++i){
 
