@@ -57,7 +57,6 @@ function hobbyHandler(){
 
   }
   renderTags();
-
 }
 
 function inputHandlers(){
@@ -66,7 +65,6 @@ function inputHandlers(){
 
   let hobby = $('#hobby button');
   hobby.addEventListener('click', hobbyHandler, false);
-
 }
 
 function delHandler(e){
