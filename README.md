@@ -10,5 +10,4 @@
  - [Histogram Generator for City Air Quality](https://robbyvan.github.io/2016_Baidu_IFE/stage2/task5/)
  - [Tags](https://robbyvan.github.io/2016_Baidu_IFE/stage2/task9/)
  - [\<tr\> insertion & deletion](https://robbyvan.github.io/2016_Baidu_IFE/stage2/task4/)
- - [Tree traverse](https://robbyvan.github.io/2016_Baidu_IFE/stage2/task10/)
  - [BFS DFS Search + Node Insertion/Deletion](https://robbyvan.github.io/2016_Baidu_IFE/stage2/task12/index.html)
