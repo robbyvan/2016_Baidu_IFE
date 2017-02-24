@@ -67,8 +67,8 @@ function render(){
         clearInterval(pageState.lightOn);
         clearTimeout(pageState.lightOff);
       }
-    }, 200);
-  }, 500);
+    }, 150);
+  }, 350);
 }
 
 function resetTimer(){
