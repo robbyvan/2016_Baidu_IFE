@@ -12,7 +12,8 @@ var createTreeUI = (function(){
     this.rootContent = rootContent;
     this.found = [];
 
-    this.createSearchField = function(){
+    //initialze input field
+    (function(){
       let searchField = document.createElement('div');
       searchField.className = 'search-field';
 
@@ -23,25 +24,26 @@ var createTreeUI = (function(){
       button.textContent = 'Search';
 
       button.addEventListener('click', () => {
-        for (let i = 0; i < this.found.length; ++i){
-          this.found[i].classList.remove('found');
+        for (let i = 0; i < self.found.length; ++i){
+          self.found[i].classList.remove('found');
         }
-        this.found = [];
+        self.found = [];
 
         let searching = $('.search-field input').value;
-        this.DFS(searching);
-        for (let i = 0; i < this.found.length; ++i){
-          this.found[i].className += ' found';
+        self.DFS(searching);
+        for (let i = 0; i < self.found.length; ++i){
+          self.found[i].className += ' found';
         }
       }, false);
       
       searchField.appendChild(input);
       searchField.appendChild(button);
 
-      this.output.appendChild(searchField);
-    };
+      self.output.appendChild(searchField);
+    })();
 
-    this.createTreeField = function(){
+    //initialze tree field
+    (function(){
       let rootNode = document.createElement('div');
       rootNode.className = 'root';
 
@@ -52,7 +54,7 @@ var createTreeUI = (function(){
       foldIcon.setAttribute('arial-hidden', 'true');
 
       let span = document.createElement('span');
-      span.textContent = this.rootContent;
+      span.textContent = self.rootContent;
       span.className = 'valid-click';
       
       let addIcon = document.createElement('i');
@@ -73,7 +75,7 @@ var createTreeUI = (function(){
 
         //check if the click is valid
         if (clickedNode.className.indexOf('valid-click') === -1){
-          console.log('invalid click');
+          // console.log('invalid click');
           return;
         }
         
@@ -88,7 +90,7 @@ var createTreeUI = (function(){
         }else {
           //fold-icon or text
           let foldIcon = clickedNode.parentNode.querySelector('.fold-icon');
-          console.log(foldIcon);
+          // console.log(foldIcon);
           if (foldIcon.className.indexOf('right') !== -1){
             foldIcon.className = foldIcon.className.replace(/fa-angle-right/, 'fa-angle-down');
           }else{
@@ -110,12 +112,11 @@ var createTreeUI = (function(){
 
       } , false);
 
-      this.output.appendChild(rootNode);
-      this.root = rootNode;
-
-    };
+      self.output.appendChild(rootNode);
+      self.root = rootNode;
+    })();
     
-    this.init();
+    // this.init();
 
   }
 
@@ -171,12 +172,12 @@ var createTreeUI = (function(){
       div.appendChild(label);
 
       return div;
-    },
-
-    init: function(){
-      this.createSearchField();
-      this.createTreeField();
     }
+
+    // init: function(){
+    //   this.createSearchField();
+    //   this.createTreeField();
+    // }
 
   };
 
@@ -186,4 +187,4 @@ var createTreeUI = (function(){
 })();
 
 const treeUI = new createTreeUI('tree-panel', 'Programmers');
-console.log(treeUI.childs)
+// console.log(treeUI.childs)
