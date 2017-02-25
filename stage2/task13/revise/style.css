@@ -11,13 +11,13 @@ div{
   display: block;
 }
 
-.search-field {
+.tree-search-field {
   display: flex;
   justify-content: center;
   align-items: baseline;
   padding-top: 40px;
 }
-.search-field input {
+.tree-search-input {
   box-sizing: border-box;
   width: 300px;
   height: 40px;
@@ -26,7 +26,7 @@ div{
   font-size: 1.1em;
   font-family: 'STHeiti', 'SimHei', 'Tahoma,Arial','Helvetica Neue', sans-serif;
 }
-.search-field button{
+.tree-search-btn{
   border: none;
   height: 40px;
   padding: 0 20px;
@@ -35,7 +35,7 @@ div{
   color: #fff;
   font-family: 'STHeiti', 'SimHei', 'Tahoma,Arial','Helvetica Neue', sans-serif;
 }
-.search-field button:hover{
+.tree-search-field button:hover{
   cursor: pointer;
 }
 
