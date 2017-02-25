@@ -94,6 +94,32 @@ TreeNode.prototype = {
         }
       });
 
+      addEvent(input, 'keyup', (e) => {
+        e.stopPropagation();
+        console.log(e);
+        if (e.keyCode !== 13){
+          return;
+        }
+
+        //clear styles of last search
+        for (let i = 0; i < root.matches.length; ++i){
+          root.matches[i].domElement.children[0].getElementsByClassName('node-content')[0].classList.remove('found');
+        }
+
+        let userInput = $('.tree-search-input').value;
+        $('.tree-search-input').value = "";
+        if (userInput === ""){
+          return;
+        }
+
+        root.matches = root.dfsSearch(userInput, []);
+
+        //render
+        for (let i = 0; i < root.matches.length; ++i){
+          root.matches[i].domElement.children[0].getElementsByClassName('node-content')[0].className += ' found';
+        }
+      });
+
       this.output.appendChild(searchField);
   },
 

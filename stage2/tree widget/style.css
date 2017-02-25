@@ -11,11 +11,20 @@ div{
   display: block;
 }
 
+#author {
+  text-align: center;
+  color: #A0C282;
+  font-family: 'STHeiti', 'SimHei', 'Tahoma,Arial','Helvetica Neue', sans-serif;
+  /*margin: 40px auto;*/
+  height: 70px;
+  line-height: 70px;
+}
+
 .tree-search-field {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  padding-top: 40px;
+  padding-top: 10px;
 }
 .tree-search-input {
   box-sizing: border-box;
@@ -55,6 +64,7 @@ div{
 section > div i {
   display: inline-block;
   height: 20px;
+  width: 20px;
   line-height: 20px;
   text-align: center;
 }
