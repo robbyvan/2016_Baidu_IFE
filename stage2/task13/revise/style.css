@@ -42,7 +42,7 @@ div{
 .root{
   display: block;
   padding: 30px;
-  width: 500px;
+  width: 700px;
   margin: 40px auto;
   border: 1px solid #A0C282;
   border-radius: 4px;
@@ -60,7 +60,7 @@ section > div i {
 }
 .root div {
   /*height: 40px;*/
-  margin: 10px 20px;
+  margin: 10px 30px;
 }
 
 .root label span{
@@ -73,16 +73,27 @@ i.fa-angle-right {
 .valid-click{
   cursor: pointer;
 }
+
+i.edit-icon {
+  color: #EDE03F;
+  margin-left: 10px;
+  visibility: hidden;
+}
 i.add-icon {
   color: #99E0EB;
   margin-left: 10px;
-}
-i.add-icon:hover {
-  visibility: initial;
+  visibility: hidden;
 }
 i.del-icon {
   color: #ff8b80;
   margin-left: 10px;
+  visibility: hidden;
+}
+.root > label i{
+  visibility: initial;
+}
+label:hover i.edit-icon,label:hover i.add-icon,label:hover i.del-icon{
+  visibility: initial;
 }
 .hide {
   display: none;

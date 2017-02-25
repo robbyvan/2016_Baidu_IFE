@@ -104,17 +104,21 @@ TreeNode.prototype = {
     let label = document.createElement('label');
 
     let expandIcon = document.createElement('label');
-    expandIcon.className = 'fa fa-angle-down expand-icon valid-click';
+    expandIcon.className = 'fa expand-icon valid-click'; //modified
 
     let nodeContent = document.createElement('span');
     nodeContent.className = 'node-content valid-click';
     nodeContent.textContent = rootContent;
+
+    let editIcon = document.createElement('i');
+    editIcon.className = 'fa fa-pencil edit-icon valid-click';
 
     let addIcon = document.createElement('i');
     addIcon.className = 'fa fa-plus add-icon valid-click';
 
     label.appendChild(expandIcon);
     label.appendChild(nodeContent);
+    label.appendChild(editIcon);
     label.appendChild(addIcon);
     root.appendChild(label);
 
@@ -142,9 +146,15 @@ TreeNode.prototype = {
       if (clickedElem.className.indexOf('add-icon') !== -1){
         //Add
         let text = prompt('Add a node.');
-        console.log(text);
+        // console.log(text);
         if (text){
           clickedElem.parentNode.parentNode.TreeNode.addTreeNode(text);  
+        }
+      }else if(clickedElem.className.indexOf('edit-icon') !== -1){
+        //Edit
+        let text = prompt('Edit the node.');
+        if (text){
+          clickedElem.parentNode.parentNode.TreeNode.editTreeNode(text);
         }
       }else if (clickedElem.className.indexOf('del-icon') !== -1){
         //Delete
@@ -176,11 +186,14 @@ TreeNode.prototype = {
     let label = document.createElement('label');
 
     let expandIcon = document.createElement('i');
-    expandIcon.className = 'fa fa-angle-down expand-icon valid-click';
+    expandIcon.className = 'fa expand-icon valid-click';//modified
 
     let nodeContent = document.createElement('span');
     nodeContent.className = 'node-content valid-click';
     nodeContent.textContent = text;
+
+    let editIcon = document.createElement('i');
+    editIcon.className = 'fa fa-pencil edit-icon valid-click';
 
     let addIcon = document.createElement('i');
     addIcon.className = 'fa fa-plus add-icon valid-click';
@@ -188,8 +201,25 @@ TreeNode.prototype = {
     let delIcon = document.createElement('i');
     delIcon.className = 'fa fa-minus del-icon valid-click';
 
+    //expand style
+     if (this.domElement.children[0].getElementsByClassName('expand-icon')[0].className.indexOf('angle') === -1){
+      this.domElement.children[0].getElementsByClassName('expand-icon')[0].className += ' fa-angle-down';
+    }
+
+    //Expand all ajacent children
+    // for (let i = 0; i < this.children.length; ++i){
+      if (this.children.length > 0){
+        if (this.children[0].domElement.className.indexOf('hide') !== -1){
+          this.toggleNode();    
+       }
+      }
+      
+    // }
+    
+
     label.appendChild(expandIcon);
     label.appendChild(nodeContent);
+    label.appendChild(editIcon);
     label.appendChild(addIcon);
     label.appendChild(delIcon);
     div.appendChild(label);
@@ -201,7 +231,7 @@ TreeNode.prototype = {
       domElement: div
     };
 
-    this.children.push(new TreeNode(nodeConfig));
+   this.children.push(new TreeNode(nodeConfig));
 
     return this;
   },
@@ -214,8 +244,24 @@ TreeNode.prototype = {
     let delIndice = self.parent.children.indexOf(self);
     console.log(delIndice);
     self.parent.children.splice(delIndice, 1);
+
+    //edit parent expand-icon
+    if (self.parent.children.length === 0){
+      self.parent.domElement.children[0].getElementsByClassName('expand-icon')[0].classList.remove('fa-angle-down');
+    }
+
     self = null;
     return parentDom.TreeNode;
+  },
+
+  editTreeNode: function(text){
+    if (!text){
+      return;
+    }
+    let self = this;
+    self.nodeContent = text;
+    self.domElement.children[0].getElementsByClassName('node-content')[0].textContent = text;
+    return self;
   },
 
   toggleNode: function(){
@@ -257,11 +303,20 @@ TreeNode.prototype = {
 
 
 /* Instantiate root */
-const root = new TreeNode({nodeContent: 'Programmers'}, 'tree-panel');
+const root = new TreeNode({nodeContent: 'Engineering'}, 'tree-panel');
 root.init(root.nodeContent);
 
 //Add Initial nodes
-root.addTreeNode('Web Developer');
-root.addTreeNode('Software Engineer');
-root.children[0].addTreeNode('Front-End Developer');
+root.addTreeNode('Computer Science');
+root.children[0].addTreeNode('Data Structure and Algorithms');
+root.children[0].addTreeNode('Operating System');
+root.children[0].addTreeNode('Programming Languages');
+root.children[0].children[2].addTreeNode('JavaScript');
+root.children[0].children[2].addTreeNode('C++');
+root.children[0].addTreeNode('Database');
+root.children[0].addTreeNode('Computer Networks');
+root.addTreeNode('Electrical Engineering');
+root.children[1].addTreeNode('Analog Circuit');
+root.children[1].addTreeNode('Digital Circuit');
+root.children[1].addTreeNode('Computer Networks');
 
