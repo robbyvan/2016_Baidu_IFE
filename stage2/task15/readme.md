@@ -16,7 +16,7 @@
 config: {
   fieldName: config.fieldName || "username";      //new field name
   placeholder: config.placeholder || "username";  //placeholder of the input
-  checkType: config.checkType || 'username';      // username, password, email, phone
+  checkType: config.checkType || 'username';      // username, password, password2, email, phone
   rule: config.rule || 'Username shoud be no longer than 20';   //Hint about the format of this field
   minLength: config.minLength || 1;               //minimum length
   maxLength: config.maxLength || 20;              //maximum length
