@@ -25,7 +25,7 @@ config: {
 @param {String} parentDomId
 parentDomId : The destionation of the new VForm
 
-``
+```
 
 ```js
 const VF1 = new VForm({}, 'validation-form'); //Default: username
