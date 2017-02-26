@@ -108,7 +108,7 @@ TreeNode.prototype = {
 
         let userInput = $('.tree-search-input').value;
         // $('.tree-search-input').value = "";
-        if (userInput === ""){
+        if (userInput === "" || userInput.trim() === ""){
           return;
         }
 
