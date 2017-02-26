@@ -7,7 +7,7 @@
  - [2-column Layout](https://robbyvan.github.io/2-Column-Layout/task1_2.html)
 
 ##Basic JS
- - [Tree Widget](https://robbyvan.github.io/Tree-Widget/index.html)
+ - [Tree Widget](https://github.com/robbyvan/Tree-Widget)
  - [Form Validation](https://robbyvan.github.io/2016_Baidu_IFE/stage2/task15/)
  - [Histogram Generator for City Air Quality](https://robbyvan.github.io/2016_Baidu_IFE/stage2/task5/)
  - [Tags](https://robbyvan.github.io/2016_Baidu_IFE/stage2/task9/)
