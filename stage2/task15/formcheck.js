@@ -102,6 +102,9 @@ VForm.prototype = {
     input.className = 'VForm-input valid-check';
     input.setAttribute('name', this.fieldName);
     input.setAttribute('placeholder', this.placeholder);
+    if (this.fieldName.toLowerCase().indexOf('password') !== -1){
+      input.setAttribute('type', 'password');
+    }
 
     // let button = document.createElement('button');
     let p = document.createElement('p');
