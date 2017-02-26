@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:  'STHeiti', 'SimHei', 'Tahoma,Arial','Helvetica Neue', sans-serif;
+}
+
+input {
+  box-sizing: border-box;
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 1.1em;
+  border: 1px solid gray;
+}
+p {
+  display: block;
+  text-align: center;
+  height: 20px;
+  margin: 0 auto;
+}
+button{
+  display: block;
+  margin: 20px auto;
+  height: 40px;
+  width: 300px;
+  border: none;
+  font-size: 1.1em;
+}
+button:hover{
+  cursor: pointer;
+}

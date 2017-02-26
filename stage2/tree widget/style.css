@@ -14,7 +14,7 @@ div{
 #author {
   text-align: center;
   color: #A0C282;
-  font-family: 'STHeiti', 'SimHei', 'Tahoma,Arial','Helvetica Neue', sans-serif;
+  font-family: 'Tahoma,Arial','Helvetica Neue', 'STHeiti', 'SimHei',  sans-serif;
   /*margin: 40px auto;*/
   height: 70px;
   line-height: 70px;
@@ -33,7 +33,7 @@ div{
   line-height: 40px;
   padding-left: 10px;
   font-size: 1.1em;
-  font-family: 'STHeiti', 'SimHei', 'Tahoma,Arial','Helvetica Neue', sans-serif;
+  font-family: 'Tahoma,Arial','Helvetica Neue', 'STHeiti', 'SimHei',  sans-serif;
 }
 .tree-search-btn{
   border: none;
@@ -42,7 +42,7 @@ div{
   font-size: 1.1em;
   background-color: #A0C282;
   color: #fff;
-  font-family: 'STHeiti', 'SimHei', 'Tahoma,Arial','Helvetica Neue', sans-serif;
+  font-family: 'Tahoma,Arial','Helvetica Neue', 'STHeiti', 'SimHei',  sans-serif;
 }
 .tree-search-field button:hover{
   cursor: pointer;
@@ -57,7 +57,7 @@ div{
   border-radius: 4px;
   font-weight: lighter;
   font-size: 1.2em;
-  font-family: 'STHeiti', 'SimHei', 'Tahoma,Arial','Helvetica Neue', sans-serif;
+  font-family: 'Tahoma,Arial','Helvetica Neue', 'STHeiti', 'SimHei',  sans-serif;
   color: #A0C282;
 }
 

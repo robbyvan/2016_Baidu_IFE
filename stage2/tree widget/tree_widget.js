@@ -311,7 +311,7 @@ TreeNode.prototype = {
       return;
     }
 
-    if (self.nodeContent.trim().toLowerCase() === target.trim().toLowerCase()){
+    if (self.nodeContent.trim().toLowerCase().indexOf(target.trim().toLowerCase()) !== -1){
       found.push(self);
     }
 
