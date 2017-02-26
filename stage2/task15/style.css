@@ -3,6 +3,12 @@
   padding: 0;
   font-family:  'STHeiti', 'SimHei', 'Tahoma,Arial','Helvetica Neue', sans-serif;
 }
+h1 {
+  color: #99E0EB;
+  font-size: 3em;
+  margin: 20px auto;
+  text-align: center;
+}
 #validation-form{
   display: flex;
   flex-direction: column;
@@ -10,7 +16,7 @@
 input {
   box-sizing: border-box;
   display: block;
-  margin: 20px auto;
+  margin: 10px auto;
   width: 300px;
   height: 40px;
   padding-left: 10px;
@@ -25,17 +31,20 @@ p {
 }
 button{
   order: 100;
+  border: 1px solid #99E0EB;
   display: inline-block;
   margin: 20px auto;
   height: 40px;
   width: 300px;
-  border: none;
   font-size: 1.1em;
-  color: #fff;
-  background-color: #99E0EB;
+  color: #99E0EB;
+  background-color: #fff;
 }
 button:hover{
+  border: none;
   cursor: pointer;
+  background-color: #99E0EB;
+  color: #fff;
 }
 .show-rule {
   color: gray;

@@ -17,7 +17,12 @@ const addEvent = function(element, type, handler){
 }
 
 /*
+
+*============= VForm Start =============
+
 *   Validation Form
+    @param {Object} config
+    @param {String} parentDomId
 */
 function VForm(config, parentDomId){
   if (!parentDomId){
@@ -277,7 +282,12 @@ VForm.prototype = {
 
 }
 
-const VF1 = new VForm({}, 'validation-form');
+/*============= VForm End =============*/
+
+
+
+//test
+const VF1 = new VForm({}, 'validation-form'); //Default: username
 const VF2 = new VForm({fieldName: 'password', placeholder: 'password', checkType: 'password'}, 'validation-form');
 const VF3 = new VForm({fieldName: 'password2', placeholder: 'password again', checkType:'password2'}, 'validation-form');
 const VF4 = new VForm({fieldName: 'email', placeholder: 'email', checkType:'email'}, 'validation-form');
