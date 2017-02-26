@@ -311,6 +311,12 @@ TreeNode.prototype = {
       return;
     }
 
+    if (this.children.length > 0){
+      if (this.children[0].domElement.className.indexOf('hide') !== -1){
+        this.toggleNode();    
+      }
+    }
+
     if (self.nodeContent.trim().toLowerCase().indexOf(target.trim().toLowerCase()) !== -1){
       found.push(self);
     }
