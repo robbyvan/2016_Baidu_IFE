@@ -81,7 +81,7 @@ TreeNode.prototype = {
         }
 
         let userInput = $('.tree-search-input').value;
-        $('.tree-search-input').value = "";
+        // $('.tree-search-input').value = "";
         if (userInput === ""){
           return;
         }
@@ -107,7 +107,7 @@ TreeNode.prototype = {
         }
 
         let userInput = $('.tree-search-input').value;
-        $('.tree-search-input').value = "";
+        // $('.tree-search-input').value = "";
         if (userInput === ""){
           return;
         }
@@ -115,6 +115,10 @@ TreeNode.prototype = {
         root.matches = root.dfsSearch(userInput, []);
 
         //render
+        if (root.matches.length === 0){
+          alert('Sorry, no such directory');
+        }
+
         for (let i = 0; i < root.matches.length; ++i){
           root.matches[i].domElement.children[0].getElementsByClassName('node-content')[0].className += ' found';
         }
