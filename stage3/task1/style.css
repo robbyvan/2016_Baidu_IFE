@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12pt;
+  /*background-color: #e3e3e3;*/
+  font-family: "STHeiti",sans-serif;
+}
+
+#init-btn{
+  display: block;
+  margin: 40px auto;
+  height: 50px;
+  width: 80%;
+  font-size: 2em;
+}
+#init-btn:hover{
+  cursor: pointer;
+}
+
+
+.FL-mask{
+  position: absolute;
+  display: block;
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.FL-float{
+  position: absolute;
+  width: 450px;
+  height: 300px;
+  top: 20%;
+  left: 50%;
+  margin-left: -225px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px 2px #e3e3e3;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 400px;
+  min-height: 250px;
+  padding: 20px;
+}
+
+.FL-float-closebtn {
+  text-align: right;
+  color: #8b8b8b;
+  height: 10px;
+}
+.FL-float-closebtn:hover {
+  cursor: pointer;
+}
+
+.FL-float-title {
+  box-sizing: border-box;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.7em;
+  color: #6096ED;
+}
+.FL-float input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 1em;
+  outline: none;
+  color: #5D5D61;
+}
+.FL-float-button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #6096ED;
+  font-size: 1.1em;
+  color: #fff;
+  border-radius: 4px;
+}
+.FL-float-button:hover {
+  cursor: pointer;
+}
+
+
+
+
+
