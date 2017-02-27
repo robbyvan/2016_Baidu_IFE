@@ -9,7 +9,7 @@
 ##Basic JS
  - [Tree Widget](https://github.com/robbyvan/Tree-Widget)
  - [Form Validation](https://github.com/robbyvan/2016_Baidu_IFE/tree/master/stage2/task15)
- - [Floating Layer](https://robbyvan.github.io/2016_Baidu_IFE/stage3/task1/)
+ - [Floating Layer](https://github.com/robbyvan/2016_Baidu_IFE/tree/master/stage3/task1)
  - [Histogram Generator for City Air Quality](https://robbyvan.github.io/2016_Baidu_IFE/stage2/task5/)
  - [Tags](https://robbyvan.github.io/2016_Baidu_IFE/stage2/task9/)
  - [BFS DFS Search + Node Insertion/Deletion](https://robbyvan.github.io/2016_Baidu_IFE/stage2/task12/index.html)
