@@ -92,9 +92,6 @@ FloatingLayer.prototype = {
     });
 
     return this;
-  },
-
-  
-
+  }
 
 };
