@@ -6,7 +6,8 @@
  - [Newspaper Layout](https://robbyvan.github.io/Newspaper-Layout/task6.html)
  - [2-column Layout](https://robbyvan.github.io/2-Column-Layout/task1_2.html)
 
-##Basic JS
+##UI Practise  (JavaScript)
+ Some of them were written in ES6, those browers not supporting ES6 may not display correctly
  - [Tree Widget](https://github.com/robbyvan/Tree-Widget)
  - [Form Validation](https://github.com/robbyvan/2016_Baidu_IFE/tree/master/stage2/task15)
  - [Floating Layer](https://github.com/robbyvan/2016_Baidu_IFE/tree/master/stage3/task1)
