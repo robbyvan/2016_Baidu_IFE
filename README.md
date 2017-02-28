@@ -1,4 +1,3 @@
-# 2016_Baidu_IFE
 #Front-End Basic Skills Training
   This repo is used for practising Front-End basic skills.
 ##Layout Practise (HTML & CSS)
