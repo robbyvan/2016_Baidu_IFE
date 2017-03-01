@@ -52,6 +52,6 @@ button:hover{
 .show-correct{
   color: #A0C282;
 }
-.show-err-length, .show-err-pass2, .show-err-email, .show-err.phone{
+.show-err-length, .show-err-pass2, .show-err-email, .show-err-phone{
   color: #ff8b80;
 }
