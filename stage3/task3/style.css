@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.gallery {
+  margin-top: 40px;
+  position: relative;
+  display: block;
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+  background-color: pink;
+}
+
+.gallery img {
+  display: block;
+  position: absolute;
+  height: 180px;
+  width: 700px;
+  left: 50%;
+  margin-left: -350px;
+}
+
+.carousel-nav {
+  display: block;
+  text-align: center;
+}
+
+.carousel-nav li {
+  display: inline-block;
+  list-style-type: none;
+  border: 1px solid gray;
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  border-radius: 100%;
+}
+.selected {
+  background-color: gray;
+}
+.carousel-nav li:hover {
+  cursor: pointer;
+}
