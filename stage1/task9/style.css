@@ -1,0 +1,98 @@
+.banner {
+  width: 700px;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
+  /*overflow: hidden;*/
+  background-color: gray;
+}
+
+.banner ul {
+  margin: 0 auto;
+  padding: 0; 
+}
+
+.banner li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sliders {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  animation: .3s slider-init linear;
+}
+
+.sliders li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  animation: .3s slider-out linear;
+}
+
+.sliders li:target {
+  left: 0%;
+  animation: .3s slider-in linear;
+}
+
+@keyframes slider-init {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes slider-in {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes slider-out {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+#slider_1 {
+  background-color: gold;
+}
+
+#slider_2 {
+  background-color: lightgreen;
+}
+
+#slider_3 {
+  background-color: pink;
+}
+
+.btns {
+  z-index: 100;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.btns a {
+  display: block;
+  margin: 0 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+}
