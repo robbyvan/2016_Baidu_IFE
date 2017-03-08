@@ -41,8 +41,14 @@ class Carousel {
     };
     
     //bind methods
+    this.createContainer = this.createContainer.bind(this);
     this.createGallery = this.createGallery.bind(this);
     this.createNav = this.createNav.bind(this);
+    this.createButtons = this.createButtons.bind(this);
+    this.rotate = this.rotate.bind(this);
+    this.autoPlay = this.autoPlay.bind(this);
+    this.forceChange =this.forceChange.bind(this);
+    
     this.init = this.init.bind(this);
 
     //call init
