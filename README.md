@@ -7,6 +7,7 @@
 
 ##UI Practise  (JavaScript)
  Some of them were written in ES6 and not transpiled via Babel, so browers not supporting ES6 may not display correctly
+ - [Image Carousel](https://github.com/robbyvan/2016_Baidu_IFE/tree/master/stage3/task3)
  - [Tree Widget](https://github.com/robbyvan/Tree-Widget)
  - [Form Validation](https://github.com/robbyvan/2016_Baidu_IFE/tree/master/stage2/task15)
  - [Floating Layer](https://github.com/robbyvan/2016_Baidu_IFE/tree/master/stage3/task1)
